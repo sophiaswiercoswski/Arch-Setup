@@ -1,0 +1,16 @@
+{
+    "clock": {
+        "format": "  {:%H:%M |   %d/%m/%y} ",
+        "interval": 60,
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "format": {
+                "today": "<span color='#fAfBfC'><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "shift_down",
+            "on-click": "shift_up"
+        }
+    }
+}
