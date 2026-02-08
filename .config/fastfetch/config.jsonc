@@ -1,82 +1,120 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "display": {
+    "bar": {
+      "char": {
+        "total": "─"
+      },
+      "width": 10
+    },
+    "percent": {
+      "type": 3,
+      "ndigits": 2
+    },
+    "key": {
+      "width": 16
+    },
+    "separator": ""
+  },
   "modules": [
     "break",
     {
-      "type": "host",
-      "key": "╭─ "
-    },
-    {
-      "type": "cpu",
-      "key": "├─󰍛"
-    },
-    {
-      "type": "gpu",
-      "key": "├─󰘚"
-    },
-    {
-      "type": "memory",
-      "key": "├─󰑭"
-    },
-    {
-      "type": "disk",
-      "key": "├─"
-    },
-    {
-      "type": "swap",
-      "key": "╰─󰑭 (swap)"
-    },
-    "break",
-    {
-      "type": "os",
-      "key": "╭─"
-    },
-    {
-      "type": "kernel",
-      "key": "├─"
-    },
-    {
-      "type": "packages",
-      "key": "├─󰏖"
-    },
-    {
-      "type": "shell",
-      "key": "╰─"
-    },
-    "break",
-    {
-      "type": "de",
-      "key": "╭─"
-    },
-    {
-      "type": "lm",
-      "key": "├─󰧨"
-    },
-    {
-      "type": "wm",
-      "key": "├─"
-    },
-    {
-      "type": "wmtheme",
-      "key": "├─󰉼"
-    },
-    {
-      "type": "terminal",
-      "key": "╰─"
-    },
-    "break",
-    {
-      "type": "uptime",
-      "key": "╭─󰥔 Uptime"
+      "type": "title",
+      "key": " ",
+      "keyWidth": 4,
+      "keyColor": "#9375f5",
+      "format": "{#red} {#36}{1}@{2}"
     },
     {
       "type": "datetime",
-      "key": "├─ DateTime"
+      "key": " ",
+      "format": "{#white}󰃮 {1}-{4}-{23} {14}:{18}:{20} ({22})"
+    },
+    "break",
+    {
+      "type": "host",
+      "key": " pc       ",
+      "keyColor": "#d294ff"
+    },
+    {
+      "type": "os",
+      "key": " os       ",
+      "keyColor": "#d294ff"
+    },
+    {
+      "type": "kernel",
+      "key": " kernel       ",
+      "keyColor": "#d294ff"
+    },
+    {
+      "type": "wm",
+      "key": " wm       ",
+      "keyColor": "#d294ff"
+    },
+    {
+      "type": "packages",
+      "key": "󰏖 packages ",
+      "keyColor": "#d294ff"
+    },
+    {
+      "type": "uptime",
+      "key": "󰥔 uptime   ",
+      "keyColor": "#d294ff"
+    },
+    "break",
+    {
+      "type": "shell",
+      "key": " shell    ",
+      "keyColor": "#b5a0fe"
+    },
+    {
+      "type": "terminal",
+      "key": " terminal ",
+      "keyColor": "#b5a0fe"
+    },
+    {
+      "type": "terminalfont",
+      "key": " font     ",
+      "keyColor": "#b5a0fe"
+    },
+    "break",
+    {
+      "type": "display",
+      "key": "󰍹 display  ",
+      "keyColor": "#a286fd",
+      "format": "{1}×{2}, {3}Hz [{7}]"
+    },
+    {
+      "type": "cpu",
+      "key": " cpu      ",
+      "keyColor": "#a286fd"
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 gpu      ",
+      "keyColor": "#a286fd"
+    },
+    {
+      "type": "memory",
+      "key": " ram      ",
+      "keyColor": "#a286fd"
+    },
+    {
+      "type": "swap",
+      "key": "󰑭 swap      ",
+      "keyColor": "#a286fd"
+    },
+    {
+      "type": "disk",
+      "key": " disk     ",
+      "keyColor": "#a286fd",
+      "format": "{13} {1} / {2} ({3})"
     },
     {
       "type": "battery",
-      "key": "╰─󰁹 Battery"
-    },
-    "break"
+      "key": " battery  ",
+      "keyColor": "#a286fd",
+      "format": "{10} {4} ({5})"
+    }
   ]
 }

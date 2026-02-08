@@ -6,7 +6,7 @@
     },
     "memory": {
         "interval": 10,
-        "format": "{used}GB 󰾅",
+        "format": "{used}GB",
         "tooltip-format": "{used}GB / {total}GB"
     },
     "pulseaudio": {
